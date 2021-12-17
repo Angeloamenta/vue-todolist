@@ -30,7 +30,7 @@ const app = new Vue({
                   text: this.txt,
                   author: "Pippo"
                   }
-                  this.todos.push(objct);  
+                  this.todos.unshift(objct);  
                 }
                 this.txt = ""
             },
