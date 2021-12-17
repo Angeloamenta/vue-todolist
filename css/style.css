@@ -48,6 +48,21 @@ html {
     outline: none;
 }
 
-.list ul li {
+.list ul li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list ul li .text-todo {
+    width: calc(100% - 4em);
     margin-bottom: 1.5em;
+    border-radius: 20px;
+    padding: 0.7em;
+    background: rgb(34,22,232);
+background: linear-gradient(90deg, rgba(34,22,232,0.2861345221682423) 0%, rgba(242,210,91,0.437395026369923) 77%, rgba(0,202,255,0.062044886313900593) 100%);
+}
+
+.list .delete i {
+    font-size: 2em;
 }
