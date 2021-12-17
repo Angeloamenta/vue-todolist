@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- container -->
-    <div class="container">
+    <div id="app" class="container">
 
         <!-- sub-container -->
         <div class="sub-container">
@@ -37,20 +37,20 @@
             <main>
                 <!-- add-list -->
                 <div class="add-list">
-                    <input type="text" placeholder="Inserisci qui la tua nota">
-                    <i class="fa-solid fa-circle-plus"></i>
+                    <input v-model="txt" type="text" placeholder="Inserisci qui la tua nota">
+                    <i @click="addNew" class="fa-solid fa-circle-plus"></i>
                 </div>
                 <!-- list -->
                 <div class="list">
                     <ul>
-                        <li>
+                        <li  v-for="(todo, index) in todos">
                             <div class="text-todo">
-                                <h3>intro</h3>
-                                <h2>testo generico</h2>
-                                <p>testo testo</p>
+                                <h3>{{todo.intro}}</h3>
+                                <h2>{{todo.text}}</h2>
+                                <p>{{todo.author}}</p>
                             </div>
                             <div class="delete">
-                                <i class="fa-solid fa-circle-xmark"></i>
+                                <i @click="deleteThis(index)" class="fa-solid fa-circle-xmark"></i>
                             </div>
                         </li>
                     </ul>
