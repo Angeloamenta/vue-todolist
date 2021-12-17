@@ -23,9 +23,31 @@ html {
     margin: auto;
     background-color: mediumturquoise;
     border-radius: 25px;
+    padding: 20px;
 
 }
 
-header {
-    padding: 20px;
+.add-list {
+    margin: 2em 0;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0.7em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.add-list i {
+    font-size: 2em;
+}
+
+.add-list input {
+    background-color: mediumturquoise;
+    width: calc(100% - 4em);
+    border-style: none;
+    outline: none;
+}
+
+.list ul li {
+    margin-bottom: 1.5em;
 }
