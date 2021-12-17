@@ -37,7 +37,7 @@
             <main>
                 <!-- add-list -->
                 <div class="add-list">
-                    <input v-model="txt" type="text" placeholder="Inserisci la tua nota">
+                    <input v-on:keyup.enter="addNew" v-model="txt" type="text" placeholder="Inserisci la tua nota">
                     <i @click="addNew" class="fa-solid fa-circle-plus"></i>
                 </div>
                 <!-- list -->
